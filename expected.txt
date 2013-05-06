@@ -1,0 +1,187 @@
+TLP_ID {
+  x == x
+}
+TLP_CAT {
+  xy == xy
+}
+TPL_TO_LIST {
+  ==
+  a == a
+  a, b == a, b
+  a, b, c == a, b, c
+  a, b, c == a, b, c
+}
+TPL_IS_EMPTY {
+  1 == 1
+  0 == 0
+  0 == 0
+  0 == 0
+  0 == 0
+  0 == 0
+  0 == 0
+  0 == 0
+  0 == 0
+  0 == 0
+  0 == 0
+}
+TPL_IS_EMPTY_L {
+  1 == 1
+  0 == 0
+  0 == 0
+  0 == 0
+  0 == 0
+  0 == 0
+  0 == 0
+  0 == 0
+  0 == 0
+  0 == 0
+  0 == 0
+}
+TPL_SIZE {
+  1 == 1
+  1 == 1
+  1 == 1
+  1 == 1
+  1 == 1
+  1 == 1
+  1 == 1
+  1 == 1
+  1 == 1
+  0 == 0
+  1 == 1
+  2 == 2
+  3 == 3
+  3 == 3
+  3 == 3
+  64 == 64
+}
+TPL_SIZE_L {
+  1 == 1
+  1 == 1
+  1 == 1
+  1 == 1
+  1 == 1
+  1 == 1
+  1 == 1
+  1 == 1
+  1 == 1
+  0 == 0
+  1 == 1
+  2 == 2
+  3 == 3
+  1 == 1
+  1 == 1
+  64 == 64
+}
+TPL_APPLY_012 {
+  F_0 (a, b, c) == F_0 (a, b, c)
+  F_1 (a, b, c) == F_1 (a, b, c)
+  F_2 (a, b, c) == F_2 (a, b, c)
+  F_2 (a, b, c) == F_2 (a, b, c)
+  F_0 () == F_0 ()
+  F_1 () == F_1 ()
+  F_2 () == F_2 ()
+  F_2 () == F_2 ()
+  F_2 (a, b, c) == F_2 (a, b, c)
+  F_2 (a, b, c) == F_2 (a, b, c)
+}
+TPL_HEAD {
+  ==
+  a == a
+  a == a
+  a == a
+  a == a
+}
+TPL_HEAD_L {
+  ==
+  a == a
+  a == a
+  a == a
+  a == a
+}
+TPL_TAIL {
+  () == ()
+  () == ()
+  (b, c) == (b, c)
+  (b, c) == (b, c)
+  (b, c) == (b, c)
+}
+TPL_TAIL_L {
+  ==
+  ==
+  b, c == b, c
+  b, c == b, c
+  b, c == b, c
+}
+TPL_ELEMENT {
+  a == a
+  b == b
+  c == c
+  c == c
+  c == c
+  c == c
+}
+TPL_APPEND {
+  (a) == (a)
+  (a, b) == (a, b)
+  (a, b, c, d) == (a, b, c, d)
+  (a, b, c, d) == (a, b, c, d)
+  (a, b, c, d) == (a, b, c, d)
+}
+TPL_INSERT {
+  (a) == (a)
+  (b, a) == (b, a)
+  (d, a, b, c) == (d, a, b, c)
+  (d, a, b, c) == (d, a, b, c)
+  (d, a, b, c) == (d, a, b, c)
+}
+TPL_ROTATE {
+  () == ()
+  (a) == (a)
+  (b, c, a) == (b, c, a)
+  (b, c, a) == (b, c, a)
+  (b, c, a) == (b, c, a)
+}
+TPL_RECURSE {
+  (a, b, c) == (a, b, c)
+  F((a, b, c)) == F((a, b, c))
+  F(F((a, b, c))) == F(F((a, b, c)))
+  F(F((a, b, c))) == F(F((a, b, c)))
+  F(F((a, b, c))) == F(F((a, b, c)))
+}
+TPL_FOR_EACH {
+  () == ()
+  (2*a) == (2*a)
+  (2*a, 2*b, 2*c) == (2*a, 2*b, 2*c)
+  (2*a, 2*b, 2*c) == (2*a, 2*b, 2*c)
+  (2*a, 2*b, 2*c) == (2*a, 2*b, 2*c)
+  () == ()
+  (a + x) == (a + x)
+  (a + x, b + x, c + x) == (a + x, b + x, c + x)
+  (a + x, b + x, c + x) == (a + x, b + x, c + x)
+  (a + x, b + x, c + x) == (a + x, b + x, c + x)
+}
+TPL_FOR_EACH_L {
+  ==
+  2*a == 2*a
+  2*a, 2*b, 2*c == 2*a, 2*b, 2*c
+  2*a, 2*b, 2*c == 2*a, 2*b, 2*c
+  2*a, 2*b, 2*c == 2*a, 2*b, 2*c
+  ==
+  a + x == a + x
+  a + x, b + x, c + x == a + x, b + x, c + x
+  a + x, b + x, c + x == a + x, b + x, c + x
+  a + x, b + x, c + x == a + x, b + x, c + x
+}
+TPL_FOR_EACH_S {
+  ==
+  2*a == 2*a
+  2*a 2*b 2*c == 2*a 2*b 2*c
+  2*a 2*b 2*c == 2*a 2*b 2*c
+  2*a 2*b 2*c == 2*a 2*b 2*c
+  ==
+  a + x == a + x
+  a + x b + x c + x == a + x b + x c + x
+  a + x b + x c + x == a + x b + x c + x
+  a + x b + x c + x == a + x b + x c + x
+}
